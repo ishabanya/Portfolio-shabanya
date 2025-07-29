@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "react-app",
+    "react-app/jest"
+  ],
+  "rules": {
+    // Code Quality - Basic rules only
+    "no-console": "warn",
+    "no-debugger": "error",
+    
+    // React Specific - CRA handles these
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    
+    // Disable problematic rules
+    "import/order": "off",
+    
+    // General Code Style - Standard JS rules only
+    "prefer-const": "error",
+    "no-var": "error"
+  }
+}

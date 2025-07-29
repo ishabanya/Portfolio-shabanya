@@ -1,0 +1,57 @@
+# Robots.txt for Y Shabanya Kishore Portfolio
+# Generated on 2025-07-29T10:08:25.671Z
+
+User-agent: *
+Allow: /
+Allow: /static/
+Allow: /manifest.json
+Allow: /favicon.ico
+
+# Crawl-delay (optional, in seconds)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://shabanya123.github.io/portfolio-shabanya/sitemap.xml
+
+# Additional directives for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+# Block AI training bots (optional)
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+# Social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Performance note: This portfolio is optimized for fast loading
+# Last updated: 7/29/2025
