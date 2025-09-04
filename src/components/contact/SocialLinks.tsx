@@ -1,5 +1,6 @@
 import { memo } from 'react';
 import { motion } from 'framer-motion';
+import { portfolioData } from '../../data/portfolioData';
 
 interface SocialLink {
   name: string;
@@ -18,8 +19,8 @@ const SocialLinks = memo<SocialLinksProps>(({ className = '' }) => {
   const socialLinks: SocialLink[] = [
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/shabanyakishore',
-      handle: '@shabanyakishore',
+      url: portfolioData.personal.linkedin,
+      handle: '@shabanya-kishore-yadagini',
       description: 'Professional network and career updates',
       color: 'blue',
       icon: (
@@ -30,8 +31,8 @@ const SocialLinks = memo<SocialLinksProps>(({ className = '' }) => {
     },
     {
       name: 'GitHub',
-      url: 'https://github.com/shabanyakishore',
-      handle: '@shabanyakishore',
+      url: portfolioData.personal.github,
+      handle: '@ishabanya',
       description: 'Open source projects and code repositories',
       color: 'gray',
       icon: (
@@ -66,8 +67,8 @@ const SocialLinks = memo<SocialLinksProps>(({ className = '' }) => {
     },
     {
       name: 'Email',
-      url: 'mailto:contact@shabanyakishore.dev',
-      handle: 'contact@shabanyakishore.dev',
+      url: `mailto:${portfolioData.personal.email}`,
+      handle: portfolioData.personal.email,
       description: 'Direct email for professional inquiries',
       color: 'red',
       icon: (

@@ -1,5 +1,6 @@
 import { memo } from 'react';
 import { motion } from 'framer-motion';
+import { portfolioData } from '../../data/portfolioData';
 
 interface ContactInfoItem {
   icon: React.ReactNode;
@@ -190,7 +191,7 @@ const ContactInfo = memo<ContactInfoProps>(({ className = '' }) => {
         </p>
         <div className="flex flex-wrap gap-3">
           <motion.a
-            href="https://linkedin.com/in/shabanyakishore"
+            href={portfolioData.personal.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
