@@ -111,7 +111,7 @@ export const projectsData: Project[] = portfolioData.projects.map(project => {
     metrics: Array.isArray(project.metrics) ? project.metrics : [],
     github: project.github || '',
     demo: project.github ? `${project.github}#demo` : '',
-    image: `/projects/${project.id}.jpg`,
+    image: `https://via.placeholder.com/400x250/3B82F6/FFFFFF?text=${encodeURIComponent(project.title)}`,
     featured: project.featured || false,
     status: 'completed' as const,
     challenges: details.challenges,

@@ -104,19 +104,20 @@ const LazyImage = memo<LazyImageProps>(({
 
       {/* Error State */}
       {isError && (
-        <div className="absolute inset-0 bg-gray-100 flex items-center justify-center">
-          <div className="text-center text-gray-400">
-            <svg className="w-12 h-12 mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 flex items-center justify-center">
+          <div className="text-center text-gray-600">
+            <svg className="w-16 h-16 mx-auto mb-3" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M9 11H7v6h2v-6zm4 0h-2v6h2v-6zm4 0h-2v6h2v-6zm2-7v2H4V4h3.5l1-1h7l1 1H20zm-2 5H5v11c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V9z"/>
             </svg>
-            <p className="text-sm">Failed to load image</p>
+            <div className="text-sm font-medium text-gray-700">Project Preview</div>
+            <div className="text-xs text-gray-500 mt-1">Click to view details</div>
           </div>
         </div>
       )}
       
       {/* Main Image */}
       {imageSrc && !isError && (
-        <img {...imageProps} />
+        <img {...imageProps} alt={alt || 'Project image'} />
       )}
 
       {/* Loading overlay */}
