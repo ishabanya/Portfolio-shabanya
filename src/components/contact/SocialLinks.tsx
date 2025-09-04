@@ -43,8 +43,8 @@ const SocialLinks = memo<SocialLinksProps>(({ className = '' }) => {
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/shabanyakishore',
-      handle: '@shabanyakishore',
+      url: 'https://x.com/shabanya123',
+      handle: '@shabanya123',
       description: 'Tech insights and industry discussions',
       color: 'sky',
       icon: (
@@ -55,8 +55,8 @@ const SocialLinks = memo<SocialLinksProps>(({ className = '' }) => {
     },
     {
       name: 'Instagram',
-      url: 'https://instagram.com/shabanyakishore',
-      handle: '@shabanyakishore',
+      url: 'https://www.instagram.com/shabanya_kishore/',
+      handle: '@shabanya_kishore',
       description: 'Behind-the-scenes and personal updates',
       color: 'pink',
       icon: (

@@ -88,8 +88,8 @@ const SEOHead: React.FC<SEOHeadProps> = ({
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
-      <meta name="twitter:creator" content="@shabanyakishore" />
-      <meta name="twitter:site" content="@shabanyakishore" />
+      <meta name="twitter:creator" content="@shabanya123" />
+      <meta name="twitter:site" content="@shabanya123" />
       
       {/* Additional Meta Tags */}
       <meta name="theme-color" content="#3B82F6" />
