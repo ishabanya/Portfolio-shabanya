@@ -1,6 +1,6 @@
 import { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
+// HelmetProvider not needed for react-helmet
 import ErrorBoundary from './components/common/ErrorBoundary';
 import Navigation from './components/common/Navigation';
 import PageLoader from './components/common/PageLoader';
@@ -15,7 +15,6 @@ const ProjectDetail = lazy(() => import('./pages/ProjectDetail'));
 
 function App() {
   return (
-    <HelmetProvider>
       <ErrorBoundary>
         <Router>
           <div className="App">
@@ -61,7 +60,6 @@ function App() {
           </div>
         </Router>
       </ErrorBoundary>
-    </HelmetProvider>
   );
 }
 

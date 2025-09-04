@@ -1,30 +1,35 @@
 {
   "version": 2,
   "name": "portfolio-shabanya",
-  "builds": [
+  "buildCommand": "npm run build",
+  "outputDirectory": "build",
+  "rewrites": [
     {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "build"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/static/(.*)",
-      "headers": {
-        "cache-control": "public, max-age=31536000, immutable"
-      }
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ],
   "headers": [
     {
+      "source": "/static/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
       "source": "/service-worker.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/sw.js",
       "headers": [
         {
           "key": "Cache-Control",
@@ -57,11 +62,5 @@
         }
       ]
     }
-  ],
-  "env": {
-    "REACT_APP_EMAILJS_SERVICE_ID": "@emailjs_service_id",
-    "REACT_APP_EMAILJS_TEMPLATE_ID": "@emailjs_template_id",
-    "REACT_APP_EMAILJS_PUBLIC_KEY": "@emailjs_public_key",
-    "REACT_APP_GA_MEASUREMENT_ID": "@ga_measurement_id"
-  }
+  ]
 }
