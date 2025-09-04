@@ -26,25 +26,48 @@ export const experiencesData: Experience[] = [
   },
   {
     id: 'education-srm',
-    role: 'Bachelor of Technology - Computer Science',
-    company: 'SRM Institute of Science & Technology',
-    period: '2021 - 2025',
-    location: portfolioData.personal.location,
+    role: 'M.tech(Integrated), Computer Science with Specialization in Data Science',
+    company: 'SRM University',
+    period: 'September 2021 - June 2026',
+    location: 'Chennai, Tamil Nadu',
     type: 'education',
     description: [
-      'Pursuing B.Tech in Computer Science with focus on software engineering',
-      'Specialized in Data Structures, Algorithms, and Full-Stack Development',
-      'Active in coding competitions and technical projects',
-      'Hands-on experience with modern development technologies'
+      'Pursuing Integrated M.Tech in Computer Science with specialized focus on Data Science',
+      'Advanced coursework in Machine Learning, Data Analytics, and Big Data Technologies',
+      'Hands-on experience with data processing frameworks and statistical modeling',
+      'Active participation in research projects and technical competitions'
     ],
     technologies: [
-      'Java', 'Python', 'C++', 'JavaScript', 'SQL', 
-      'Data Structures', 'Algorithms', 'Software Engineering'
+      'Python', 'R', 'Machine Learning', 'Data Analytics', 'Big Data', 
+      'Statistics', 'Deep Learning', 'Java', 'SQL', 'Data Structures'
     ],
     metrics: [
-      { label: 'Expected Graduation', value: '2025' },
-      { label: 'Major Projects', value: '10+' },
-      { label: 'Focus Area', value: 'Full-Stack Dev' }
+      { label: 'Expected Graduation', value: 'June 2026' },
+      { label: 'Specialization', value: 'Data Science' },
+      { label: 'Degree Type', value: 'Integrated M.Tech' }
+    ]
+  },
+  {
+    id: 'education-narayana',
+    role: 'Pre University in Science',
+    company: 'Narayana Junior College',
+    period: 'June 2019 - May 2021',
+    location: 'Hyderabad, Telangana',
+    type: 'education',
+    description: [
+      'Completed Pre-University education with focus on Science stream',
+      'Strong foundation in Mathematics, Physics, and Chemistry',
+      'Developed analytical and problem-solving skills',
+      'Prepared for competitive entrance examinations'
+    ],
+    technologies: [
+      'Mathematics', 'Physics', 'Chemistry', 'Computer Science Fundamentals',
+      'Analytical Reasoning', 'Problem Solving'
+    ],
+    metrics: [
+      { label: 'Stream', value: 'Science' },
+      { label: 'Duration', value: '2 Years' },
+      { label: 'Focus', value: 'STEM Foundation' }
     ]
   }
 ];
