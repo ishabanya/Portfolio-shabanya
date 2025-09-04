@@ -8,7 +8,7 @@ export const portfolioData = {
     phone: '+91-8296281999',
     location: 'Chennai, Tamil Nadu',
     github: 'https://github.com/ishabanya',
-    linkedin: 'https://linkedin.com/in/shabanya-kishore-yadagini-9a7a55249',
+    linkedin: 'https://www.linkedin.com/in/yshabanya',
     resume: '/resume.pdf',
   },
 
