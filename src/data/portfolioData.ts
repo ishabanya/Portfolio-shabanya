@@ -14,20 +14,40 @@ export const portfolioData = {
   
   experience: [
     {
+      id: "ford",
+      role: "Project Intern",
+      company: "Ford Motor Company",
+      period: "August 2025 - Present",
+      description: [
+        "Streamlined build validation procedures with innovative Pega workflows and Ascent tools, reducing critical defects by 15% and enabling continuous integration for three major Ford vehicle programs",
+        "Documented 3 critical build processes, including dependency management and version control, which allowed team leads to deploy fixes and updates to production without delays",
+        "Leveraged advanced Excel and Ford's internal CMMS systems to analyze supplier performance data, identifying key trends that led to a 15% improvement in on-time delivery rates of critical components",
+        "Created automated monitoring tools using Python and bash scripting for pipeline health checks; improved application performance by 8% by optimizing algorithms, decreasing CPU usage, and increasing system uptime"
+      ],
+      technologies: ["Pega", "Python", "Bash", "Excel", "CMMS", "CI/CD", "Version Control"],
+      metrics: [
+        { label: "Defect Reduction", value: "15%" },
+        { label: "Delivery Improvement", value: "15%" },
+        { label: "Performance Gain", value: "8%" }
+      ]
+    },
+    {
       id: "citibank",
       role: "Java Developer Intern",
       company: "CitiBank",
       period: "September 2023 - December 2023",
       description: [
-        "Orchestrated robust payment processing system handling 1M+ daily transactions",
-        "Led microservices migration improving scalability by 300%",
-        "Developed fraud detection system reducing detection time from 24h to 5min"
+        "Orchestrated the construction of a robust payment processing system leveraging Java, Spring Boot, and Hibernate, expertly managing over 1 million daily transactions while maintaining a high 99.99% uptime record",
+        "Led the migration of legacy financial applications to microservices architecture, improving system scalability by 300% and reducing deployment times by 75%",
+        "Spearheaded the development of a fraud detection system utilizing Kafka and Elasticsearch, reducing the average time to detect fraudulent transactions from 24 hours to under 5 minutes, enabling swift intervention",
+        "Modernized legacy financial systems by implementing fault tolerance mechanisms using distributed system patterns, decreasing alert fatigue by 30% by designing self-healing processes to mitigate system errors"
       ],
-      technologies: ["Java", "Spring Boot", "Kafka", "Elasticsearch", "Microservices"],
+      technologies: ["Java", "Spring Boot", "Hibernate", "Kafka", "Elasticsearch", "Microservices"],
       metrics: [
         { label: "Daily Transactions", value: "1M+" },
         { label: "System Uptime", value: "99.99%" },
-        { label: "Scalability Improvement", value: "300%" }
+        { label: "Scalability Improvement", value: "300%" },
+        { label: "Fraud Detection", value: "<5min" }
       ]
     }
   ],

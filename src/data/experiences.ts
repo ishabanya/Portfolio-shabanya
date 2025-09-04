@@ -3,15 +3,26 @@ import { portfolioData } from './portfolioData';
 
 export const experiencesData: Experience[] = [
   {
-    id: portfolioData.experience[0]?.id || 'citibank',
-    role: portfolioData.experience[0]?.role || 'Java Developer Intern',
-    company: portfolioData.experience[0]?.company || 'CitiBank',
-    period: portfolioData.experience[0]?.period || 'September 2023 - December 2023',
+    id: portfolioData.experience[0]?.id || 'ford',
+    role: portfolioData.experience[0]?.role || 'Project Intern',
+    company: portfolioData.experience[0]?.company || 'Ford Motor Company',
+    period: portfolioData.experience[0]?.period || 'August 2025 - Present',
     location: portfolioData.personal.location,
     type: 'work',
     description: portfolioData.experience[0]?.description || [],
     technologies: portfolioData.experience[0]?.technologies || [],
     metrics: portfolioData.experience[0]?.metrics || []
+  },
+  {
+    id: portfolioData.experience[1]?.id || 'citibank',
+    role: portfolioData.experience[1]?.role || 'Java Developer Intern',
+    company: portfolioData.experience[1]?.company || 'CitiBank',
+    period: portfolioData.experience[1]?.period || 'September 2023 - December 2023',
+    location: portfolioData.personal.location,
+    type: 'work',
+    description: portfolioData.experience[1]?.description || [],
+    technologies: portfolioData.experience[1]?.technologies || [],
+    metrics: portfolioData.experience[1]?.metrics || []
   },
   {
     id: 'education-srm',
