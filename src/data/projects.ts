@@ -4,17 +4,17 @@ import { portfolioData } from './portfolioData';
 // Convert portfolio data to project format with proper typing
 const getProjectDetails = (projectId: string) => {
   const projectDetailsMap: Record<string, any> = {
-    'llm-benchmark': {
-      longDescription: 'Comprehensive benchmarking platform evaluating multiple LLMs across 75+ test cases with real-time performance metrics and detailed analytics visualization.',
+    'system-benchmark': {
+      longDescription: 'Comprehensive benchmarking platform evaluating multiple systems across 75+ test cases with real-time performance metrics and detailed analytics visualization.',
       challenges: [
-        'Standardizing evaluation metrics across different model architectures',
-        'Handling rate limits and API costs for multiple LLM providers',
+        'Standardizing evaluation metrics across different system architectures',
+        'Handling rate limits and API costs for multiple service providers',
         'Creating intuitive visualizations for complex performance data'
       ],
       learnings: [
-        'Deep understanding of LLM evaluation methodologies',
+        'Deep understanding of system evaluation methodologies',
         'Advanced API integration and rate limiting strategies',
-        'Data visualization best practices for ML metrics'
+        'Data visualization best practices for performance metrics'
       ]
     },
     'payment-processing': {

@@ -130,19 +130,6 @@ User-agent: DuckDuckBot
 Allow: /
 Crawl-delay: 1
 
-# Block AI training bots (optional)
-User-agent: ChatGPT-User
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
-
-User-agent: anthropic-ai
-Disallow: /
-
-User-agent: Claude-Web
-Disallow: /
-
 # Social media crawlers
 User-agent: facebookexternalhit
 Allow: /

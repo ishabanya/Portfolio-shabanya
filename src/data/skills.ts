@@ -21,8 +21,8 @@ export const skillsData: SkillCategory[] = [
           level: 90,
           yearsOfExperience: 3,
           icon: 'FaPython',
-          description: 'Data science, ML/AI, web development, automation',
-          projects: ['LLM Benchmark Dashboard', 'Data Pipeline']
+          description: 'Data science, machine learning, web development, automation',
+          projects: ['System Benchmark Dashboard', 'Data Pipeline']
         },
         'JavaScript': {
           level: 88,
@@ -109,7 +109,7 @@ export const skillsData: SkillCategory[] = [
           yearsOfExperience: 2,
           icon: 'SiFastapi',
           description: 'High-performance Python APIs, async programming',
-          projects: ['LLM Benchmark Dashboard', 'Data Pipeline']
+          projects: ['System Benchmark Dashboard', 'Data Pipeline']
         },
         'Node.js': {
           level: 80,

@@ -34,13 +34,13 @@ export const portfolioData = {
   
   projects: [
     {
-      id: "llm-benchmark",
-      title: "LLM Benchmark Dashboard",
-      description: "Benchmarking platform evaluating multiple LLMs across 75+ test cases",
-      technologies: ["Python", "Streamlit", "OpenAI API", "Docker"],
-      category: ["Python", "ML/AI"],
+      id: "system-benchmark",
+      title: "System Benchmark Dashboard",
+      description: "Benchmarking platform evaluating multiple systems across 75+ test cases",
+      technologies: ["Python", "Streamlit", "REST APIs", "Docker"],
+      category: ["Python", "Data Analysis"],
       metrics: ["75+ test cases", "Sub-2s response time"],
-      github: "https://github.com/ishabanya/llm-benchmark",
+      github: "https://github.com/ishabanya/system-benchmark",
       featured: true
     },
     {
