@@ -11,18 +11,19 @@ export const experiencesData: Experience[] = [
     type: 'work',
     description: portfolioData.experience[0]?.description || [],
     technologies: portfolioData.experience[0]?.technologies || [],
-    metrics: portfolioData.experience[0]?.metrics || []
+    metrics: portfolioData.experience[0]?.metrics || [],
   },
   {
     id: portfolioData.experience[1]?.id || 'citibank',
     role: portfolioData.experience[1]?.role || 'Java Developer Intern',
     company: portfolioData.experience[1]?.company || 'CitiBank',
-    period: portfolioData.experience[1]?.period || 'September 2023 - December 2023',
+    period:
+      portfolioData.experience[1]?.period || 'September 2023 - December 2023',
     location: portfolioData.personal.location,
     type: 'work',
     description: portfolioData.experience[1]?.description || [],
     technologies: portfolioData.experience[1]?.technologies || [],
-    metrics: portfolioData.experience[1]?.metrics || []
+    metrics: portfolioData.experience[1]?.metrics || [],
   },
   {
     id: 'education-srm',
@@ -35,17 +36,25 @@ export const experiencesData: Experience[] = [
       'Pursuing Integrated M.Tech in Computer Science with specialized focus on Data Science',
       'Advanced coursework in Machine Learning, Data Analytics, and Big Data Technologies',
       'Hands-on experience with data processing frameworks and statistical modeling',
-      'Active participation in research projects and technical competitions'
+      'Active participation in research projects and technical competitions',
     ],
     technologies: [
-      'Python', 'R', 'Machine Learning', 'Data Analytics', 'Big Data', 
-      'Statistics', 'Deep Learning', 'Java', 'SQL', 'Data Structures'
+      'Python',
+      'R',
+      'Machine Learning',
+      'Data Analytics',
+      'Big Data',
+      'Statistics',
+      'Deep Learning',
+      'Java',
+      'SQL',
+      'Data Structures',
     ],
     metrics: [
       { label: 'Expected Graduation', value: 'June 2026' },
       { label: 'Specialization', value: 'Data Science' },
-      { label: 'Degree Type', value: 'Integrated M.Tech' }
-    ]
+      { label: 'Degree Type', value: 'Integrated M.Tech' },
+    ],
   },
   {
     id: 'education-narayana',
@@ -58,16 +67,20 @@ export const experiencesData: Experience[] = [
       'Completed Pre-University education with focus on Science stream',
       'Strong foundation in Mathematics, Physics, and Chemistry',
       'Developed analytical and problem-solving skills',
-      'Prepared for competitive entrance examinations'
+      'Prepared for competitive entrance examinations',
     ],
     technologies: [
-      'Mathematics', 'Physics', 'Chemistry', 'Computer Science Fundamentals',
-      'Analytical Reasoning', 'Problem Solving'
+      'Mathematics',
+      'Physics',
+      'Chemistry',
+      'Computer Science Fundamentals',
+      'Analytical Reasoning',
+      'Problem Solving',
     ],
     metrics: [
       { label: 'Stream', value: 'Science' },
       { label: 'Duration', value: '2 Years' },
-      { label: 'Focus', value: 'STEM Foundation' }
-    ]
-  }
+      { label: 'Focus', value: 'STEM Foundation' },
+    ],
+  },
 ];
