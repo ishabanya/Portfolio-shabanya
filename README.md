@@ -1,42 +1,175 @@
-## Available Scripts
+# Portfolio - Y Shabanya Kishore
 
-In the project directory, you can run:
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. Features include project showcases, skills visualization, contact forms, and comprehensive SEO optimization.
 
-### `npm start`
+## 🚀 Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The portfolio is deployed on Vercel and can be accessed at your custom domain once deployed.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## ✨ Features
 
-### `npm test`
+- **Modern Design**: Clean, responsive design with smooth animations
+- **Project Showcase**: Detailed project cards with technologies and metrics
+- **Skills Visualization**: Interactive skill cards with experience levels
+- **Contact Integration**: Working contact form with EmailJS integration
+- **SEO Optimized**: Comprehensive meta tags, structured data, and sitemap
+- **Performance**: Optimized with lazy loading, code splitting, and PWA features
+- **Accessibility**: WCAG compliant with comprehensive testing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Tech Stack
 
-### `npm run build`
+- **Frontend**: React 19, TypeScript, Tailwind CSS
+- **Animations**: Framer Motion
+- **Routing**: React Router DOM
+- **SEO**: React Helmet, Structured Data
+- **Testing**: Jest, React Testing Library
+- **Build Tool**: Create React App
+- **Deployment**: Vercel
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Deployment to Vercel
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This project is optimized for Vercel deployment. Follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. Prerequisites
 
-### `npm run eject`
+- A [Vercel account](https://vercel.com)
+- Your GitHub repository pushed to GitHub
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 2. Deploy via Vercel Dashboard
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Go to [Vercel Dashboard](https://vercel.com/dashboard)
+2. Click "New Project"
+3. Import your GitHub repository
+4. Vercel will auto-detect the framework settings:
+   - **Framework Preset**: Create React App
+   - **Build Command**: `npm run vercel-build` (or `npm run build`)
+   - **Output Directory**: `build`
+   - **Install Command**: `npm install`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 3. Environment Variables
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Set up the following environment variables in Vercel:
 
-## Learn More
+```bash
+# EmailJS Configuration (Required for contact form)
+REACT_APP_EMAILJS_SERVICE_ID=your_emailjs_service_id
+REACT_APP_EMAILJS_TEMPLATE_ID=your_emailjs_template_id
+REACT_APP_EMAILJS_PUBLIC_KEY=your_emailjs_public_key
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Google Analytics (Optional)
+REACT_APP_GA_MEASUREMENT_ID=your_google_analytics_measurement_id
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 4. Deploy
+
+Click "Deploy" and Vercel will:
+- Install dependencies
+- Run the build process
+- Generate SEO files automatically
+- Deploy to a live URL
+
+### 5. Custom Domain (Optional)
+
+1. Go to your project settings in Vercel
+2. Navigate to "Domains"
+3. Add your custom domain
+4. Follow DNS configuration instructions
+
+## 💻 Local Development
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/ishabanya/Portfolio-shabanya.git
+cd Portfolio-shabanya
+
+# Install dependencies
+npm install --legacy-peer-deps
+
+# Start development server
+npm start
+```
+
+### Available Scripts
+
+- `npm start` - Runs the development server
+- `npm test` - Launches the test runner
+- `npm run build` - Creates production build
+- `npm run vercel-build` - Build command for Vercel deployment
+- `npm run generate:seo` - Generates SEO files (sitemap, robots.txt)
+
+### Environment Setup
+
+Create a `.env` file in the root directory:
+
+```bash
+# EmailJS Configuration
+REACT_APP_EMAILJS_SERVICE_ID=your_service_id
+REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id
+REACT_APP_EMAILJS_PUBLIC_KEY=your_public_key
+
+# Optional: Google Analytics
+REACT_APP_GA_MEASUREMENT_ID=your_measurement_id
+```
+
+## 📁 Project Structure
+
+```
+src/
+├── components/          # Reusable components
+│   ├── common/         # Common UI components
+│   ├── contact/        # Contact form components
+│   ├── projects/       # Project showcase components
+│   ├── seo/           # SEO components
+│   └── skills/        # Skills visualization
+├── data/              # Static data and content
+├── hooks/             # Custom React hooks
+├── pages/             # Page components
+├── types/             # TypeScript type definitions
+└── utils/             # Utility functions
+```
+
+## 🔧 Configuration Files
+
+- `vercel.json` - Vercel deployment configuration
+- `tailwind.config.js` - Tailwind CSS configuration
+- `tsconfig.json` - TypeScript configuration
+- `package.json` - Dependencies and scripts
+
+## 📈 Performance Features
+
+- Code splitting with React.lazy()
+- Image lazy loading
+- Service worker for caching
+- Optimized bundle sizes
+- SEO-friendly meta tags
+- Structured data for search engines
+
+## 🧪 Testing
+
+```bash
+# Run tests
+npm test
+
+# Run tests with coverage
+npm test -- --coverage
+```
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📞 Contact
+
+Y Shabanya Kishore - [yadaginishabanya@gmail.com](mailto:yadaginishabanya@gmail.com)
+
+Project Link: [https://github.com/ishabanya/Portfolio-shabanya](https://github.com/ishabanya/Portfolio-shabanya)
