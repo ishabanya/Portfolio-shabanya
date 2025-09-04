@@ -25,8 +25,8 @@ const ContactInfo = memo<ContactInfoProps>(({ className = '' }) => {
         </svg>
       ),
       title: 'Email',
-      content: 'contact@shabanyakishore.dev',
-      href: 'mailto:contact@shabanyakishore.dev',
+      content: portfolioData.personal.email,
+      href: `mailto:${portfolioData.personal.email}`,
       description: 'Send me an email and I\'ll respond within 24 hours',
       color: 'blue'
     },
@@ -38,8 +38,8 @@ const ContactInfo = memo<ContactInfoProps>(({ className = '' }) => {
         </svg>
       ),
       title: 'Phone',
-      content: '+91 98765 43210',
-      href: 'tel:+919876543210',
+      content: portfolioData.personal.phone,
+      href: `tel:${portfolioData.personal.phone.replace(/[\s-]/g, '')}`,
       description: 'Available Monday-Friday, 9 AM - 6 PM IST',
       color: 'green'
     },
@@ -206,7 +206,7 @@ const ContactInfo = memo<ContactInfoProps>(({ className = '' }) => {
           </motion.a>
           
           <motion.a
-            href="https://calendly.com/shabanyakishore"
+            href={`tel:${portfolioData.personal.phone.replace(/[\s-]/g, '')}`}
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}

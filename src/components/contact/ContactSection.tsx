@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import ContactForm from './ContactForm';
 import ContactInfo from './ContactInfo';
 import SocialLinks from './SocialLinks';
+import { portfolioData } from '../../data/portfolioData';
 
 interface ContactSectionProps {
   className?: string;
@@ -183,7 +184,7 @@ const ContactSection = memo<ContactSectionProps>(({ className = '' }) => {
               </motion.a>
               
               <motion.a
-                href="mailto:contact@shabanyakishore.dev"
+                href={`mailto:${portfolioData.personal.email}`}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold 
