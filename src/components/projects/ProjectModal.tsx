@@ -89,7 +89,7 @@ const ProjectModal = memo<ProjectModalProps>(({ project, isOpen, onClose }) => {
               {/* Header Image */}
               <div className="relative h-64 md:h-80">
                 <LazyImage
-                  src={project.image || '/api/placeholder/800/400'}
+                  src={project.image || `https://via.placeholder.com/800x400/3B82F6/FFFFFF?text=${encodeURIComponent(project.title)}`}
                   alt={project.title}
                   className="w-full h-full"
                 />

@@ -90,7 +90,7 @@ const ProjectCard = memo<ProjectCardProps>(({ project, onSelect }) => {
       {/* Project Image */}
       <div className="relative h-48 overflow-hidden">
         <LazyImage
-          src={project.image || '/api/placeholder/600/400'}
+          src={project.image || `https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=${encodeURIComponent(project.title)}`}
           alt={project.title}
           className="w-full h-full"
         />
