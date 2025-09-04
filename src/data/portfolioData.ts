@@ -7,9 +7,8 @@ export const portfolioData = {
     email: 'yadaginishabanya@gmail.com',
     phone: '+91-8296281999',
     location: 'Chennai, Tamil Nadu',
-    github: 'https://github.com/ishabanya?tab=repositories',
-    linkedin:
-      'https://www.linkedin.com/in/shabanya-kishore-yadagini-9a7a55249/',
+    github: 'https://github.com/ishabanya',
+    linkedin: 'https://www.linkedin.com/in/shabanya-kishore-yadagini-9a7a55249',
     resume: '/resume.pdf',
   },
 
