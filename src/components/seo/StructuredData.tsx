@@ -8,8 +8,8 @@ export const PersonStructuredData: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": portfolioData.personal.name,
-    "url": "https://shabanya123.github.io/portfolio-shabanya",
-    "image": "https://shabanya123.github.io/portfolio-shabanya/logo512.png",
+    "url": portfolioData.site.url,
+    "image": `${portfolioData.site.url}${portfolioData.site.image}`,
     "sameAs": [
       portfolioData.personal.linkedin,
       portfolioData.personal.github
@@ -55,7 +55,7 @@ export const WebsiteStructuredData: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": `${portfolioData.personal.name} Portfolio`,
-    "url": "https://shabanya123.github.io/portfolio-shabanya",
+    "url": portfolioData.site.url,
     "description": `Personal portfolio showcasing ${portfolioData.personal.roles.join(', ')} projects and full-stack engineering experience`,
     "author": {
       "@type": "Person",
@@ -195,8 +195,8 @@ export const OrganizationStructuredData: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": `${portfolioData.personal.name} - Software Development`,
-    "url": "https://shabanya123.github.io/portfolio-shabanya",
-    "logo": "https://shabanya123.github.io/portfolio-shabanya/logo512.png",
+    "url": portfolioData.site.url,
+    "logo": `${portfolioData.site.url}${portfolioData.site.image}`,
     "description": `Professional software development services specializing in ${portfolioData.personal.roles.join(' and ')}`,
     "foundingDate": new Date().getFullYear().toString(),
     "founder": {

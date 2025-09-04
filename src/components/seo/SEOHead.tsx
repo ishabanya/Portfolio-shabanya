@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { portfolioData } from '../../data/portfolioData';
 
 interface SEOHeadProps {
   title?: string;
@@ -16,8 +17,8 @@ interface SEOHeadProps {
 }
 
 const defaultSEO = {
-  title: 'Y Shabanya Kishore - Java Spring Boot Developer & Full-Stack Engineer',
-  description: 'Experienced Java Spring Boot Developer and Full-Stack Engineer specializing in scalable enterprise applications, microservices, and modern web technologies. View my portfolio and projects.',
+  title: `${portfolioData.personal.name} - Java Spring Boot Developer & Full-Stack Engineer`,
+  description: `Experienced Java Spring Boot Developer and Full-Stack Engineer specializing in scalable enterprise applications, microservices, and modern web technologies. View my portfolio and projects.`,
   keywords: [
     'Java Developer',
     'Spring Boot',
@@ -27,12 +28,12 @@ const defaultSEO = {
     'Microservices',
     'Enterprise Applications',
     'Portfolio',
-    'Y Shabanya Kishore'
+    portfolioData.personal.name
   ],
-  image: 'https://shabanya123.github.io/portfolio-shabanya/logo512.png',
-  url: 'https://shabanya123.github.io/portfolio-shabanya',
+  image: `${portfolioData.site.url}${portfolioData.site.image}`,
+  url: portfolioData.site.url,
   type: 'website' as const,
-  author: 'Y Shabanya Kishore'
+  author: portfolioData.personal.name
 };
 
 const SEOHead: React.FC<SEOHeadProps> = ({

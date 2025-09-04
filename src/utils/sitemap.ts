@@ -1,4 +1,6 @@
 // Sitemap generation utility
+import { portfolioData } from '../data/portfolioData';
+
 export interface SitemapUrl {
   loc: string;
   lastmod?: string;
@@ -74,7 +76,7 @@ export const getPortfolioSitemapUrls = (baseUrl: string): SitemapUrl[] => {
 };
 
 // Generate sitemap for build process
-export const generatePortfolioSitemap = (baseUrl: string = 'https://shabanya123.github.io/portfolio-shabanya'): string => {
+export const generatePortfolioSitemap = (baseUrl: string = portfolioData.site.url): string => {
   const urls = getPortfolioSitemapUrls(baseUrl);
   return generateSitemap(baseUrl, urls);
 };

@@ -9,7 +9,16 @@ export const portfolioData = {
     location: 'Chennai, Tamil Nadu',
     github: 'https://github.com/ishabanya',
     linkedin: 'https://www.linkedin.com/in/shabanya-kishore-yadagini-9a7a55249',
+    twitter: 'https://x.com/shabanya123',
+    instagram: 'https://www.instagram.com/shabanya_kishore/',
     resume: '/resume.pdf',
+  },
+  
+  site: {
+    url: 'https://portfolio-shabanya.vercel.app', // Will be updated when deployed
+    title: 'Y Shabanya Kishore Portfolio',
+    description: 'Personal portfolio showcasing Full-Stack Developer, Java Spring Boot Expert, and Data Engineer projects and experience',
+    image: '/logo512.png',
   },
 
   experience: [

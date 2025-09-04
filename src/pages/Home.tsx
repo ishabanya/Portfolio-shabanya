@@ -7,6 +7,7 @@ import { PersonStructuredData, ProfessionalServiceStructuredData, FAQStructuredD
 import { experiencesData } from '../data/experiences';
 import { projectsData } from '../data/projects';
 import { skillsData } from '../data/skills';
+import { portfolioData } from '../data/portfolioData';
 
 // Lazy load heavy components
 const ProjectsShowcase = lazy(() => import('../components/projects/ProjectsShowcase'));
@@ -41,7 +42,7 @@ const Home = () => {
         title="Y Shabanya Kishore - Java Spring Boot Developer & Full-Stack Engineer"
         description="Experienced Java Spring Boot Developer and Full-Stack Engineer specializing in scalable enterprise applications, microservices, and modern web technologies. View my portfolio and projects."
         keywords={['Java Developer', 'Spring Boot', 'Full-Stack Developer', 'Software Engineer', 'React Developer', 'Microservices', 'Portfolio']}
-        url="https://shabanya123.github.io/portfolio-shabanya"
+        url={portfolioData.site.url}
         type="website"
       />
       <PersonStructuredData />

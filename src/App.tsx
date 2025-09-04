@@ -7,6 +7,7 @@ import PageLoader from './components/common/PageLoader';
 import PWAStatus from './components/common/PWAStatus';
 import SEOHead from './components/seo/SEOHead';
 import { WebsiteStructuredData, OrganizationStructuredData } from './components/seo/StructuredData';
+import { portfolioData } from './data/portfolioData';
 import './App.css';
 
 // Lazy load pages for code splitting
@@ -35,7 +36,7 @@ function App() {
                       <SEOHead 
                         title="404 - Page Not Found"
                         description="The page you're looking for doesn't exist on Y Shabanya Kishore's portfolio website."
-                        url="https://shabanya123.github.io/portfolio-shabanya/404"
+                        url={`${portfolioData.site.url}/404`}
                       />
                       <div className="min-h-screen flex items-center justify-center">
                         <div className="text-center">

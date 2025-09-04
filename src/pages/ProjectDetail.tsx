@@ -31,9 +31,9 @@ const ProjectDetail = () => {
             description: 'Complete full-stack application for supply chain management',
             longDescription: 'A comprehensive supply chain management system built with modern web technologies. Features real-time tracking, inventory management, and analytics dashboard.',
             technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Docker'],
-            demoUrl: 'https://demo.example.com',
-            githubUrl: 'https://github.com/example/project',
-            images: ['https://via.placeholder.com/800x400/3B82F6/FFFFFF?text=Project+Details']
+            demoUrl: '',
+            githubUrl: '',
+            images: [`https://via.placeholder.com/800x400/3B82F6/FFFFFF?text=${encodeURIComponent('Project Details')}`]
           }
         };
 
