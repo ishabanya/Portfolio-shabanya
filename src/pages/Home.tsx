@@ -61,14 +61,14 @@ const Home = () => {
           <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
           <div className="max-w-4xl mx-auto text-lg text-gray-700 leading-relaxed">
             <p className="mb-6">
-              Full-Stack Developer with expertise in enterprise Java applications, 
-              distributed systems, and data engineering. Currently studying at SRM University 
-              with hands-on experience in building scalable web applications.
+              {portfolioData.personal.about || `Software Engineering student at SRM University (graduating June 2026) with a focus on backend 
+              development and infrastructure. Currently interning at Ford Motor Company, building analytics 
+              dashboards and data integration systems.`}
             </p>
             <p>
-              Passionate about creating efficient, maintainable code and solving complex 
-              technical challenges. Experienced with Spring Boot, React, and modern 
-              development practices.
+              {`I enjoy dissecting complex backend challenges, from designing fair matchmaking algorithms to 
+              ensuring low-latency server infrastructure. My focus is on building robust systems that scale 
+              efficiently while maintaining reliability and performance.`}
             </p>
           </div>
         </div>

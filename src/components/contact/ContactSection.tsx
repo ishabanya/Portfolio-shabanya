@@ -202,12 +202,12 @@ const ContactSection = memo<ContactSectionProps>(({ className = '' }) => {
             {/* Additional Info */}
             <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div className="text-blue-100">
-                <div className="text-2xl font-bold text-white">50+</div>
+                <div className="text-2xl font-bold text-white">5+</div>
                 <div className="text-sm">Projects Completed</div>
               </div>
               <div className="text-blue-100">
-                <div className="text-2xl font-bold text-white">3+</div>
-                <div className="text-sm">Years Experience</div>
+                <div className="text-2xl font-bold text-white">1</div>
+                <div className="text-sm">Year Experience</div>
               </div>
               <div className="text-blue-100">
                 <div className="text-2xl font-bold text-white">24h</div>

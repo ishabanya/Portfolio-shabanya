@@ -120,8 +120,8 @@ const ExperienceTimeline = memo<ExperienceTimelineProps>(({ experiences }) => {
             className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 text-center"
           >
             <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
-              <div className="text-3xl font-bold text-blue-600 mb-2">3+</div>
-              <div className="text-gray-600">Years Experience</div>
+              <div className="text-3xl font-bold text-blue-600 mb-2">1</div>
+              <div className="text-gray-600">Year Experience</div>
             </div>
             
             <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
@@ -130,7 +130,7 @@ const ExperienceTimeline = memo<ExperienceTimelineProps>(({ experiences }) => {
             </div>
             
             <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
-              <div className="text-3xl font-bold text-purple-600 mb-2">50+</div>
+              <div className="text-3xl font-bold text-purple-600 mb-2">5+</div>
               <div className="text-gray-600">Projects Delivered</div>
             </div>
           </motion.div>
