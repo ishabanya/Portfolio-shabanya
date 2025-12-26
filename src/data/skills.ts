@@ -15,21 +15,21 @@ export const skillsData: SkillCategory[] = [
           yearsOfExperience: 4,
           icon: 'FaJava',
           description: 'Enterprise applications, Spring ecosystem, microservices',
-          projects: ['Payment Processing System', 'Microservices Migration']
+          projects: ['PulsePay', 'Data Pipeline Monitoring System']
         },
         'Python': {
           level: 90,
           yearsOfExperience: 3,
           icon: 'FaPython',
-          description: 'Data science, machine learning, web development, automation',
-          projects: ['System Benchmark Dashboard', 'Data Pipeline']
+          description: 'Data science, API development, automation, analytics',
+          projects: ['LLM Benchmark Dashboard', 'Data Pipeline Monitoring System', 'Ford Analytics Dashboard']
         },
         'JavaScript': {
           level: 88,
           yearsOfExperience: 3,
           icon: 'FaJs',
           description: 'Modern ES6+, Node.js, full-stack development',
-          projects: ['Analytics Dashboard', 'API Gateway']
+          projects: ['PulsePay', 'Ford Analytics Dashboard']
         },
         'C/C++': {
           level: 75,
@@ -43,21 +43,14 @@ export const skillsData: SkillCategory[] = [
           yearsOfExperience: 4,
           icon: 'FaDatabase',
           description: 'Complex queries, optimization, database design',
-          projects: ['Payment Processing System', 'Data Pipeline']
+          projects: ['Data Pipeline Monitoring System', 'Ford Analytics Dashboard']
         },
-        'Go': {
-          level: 65,
-          yearsOfExperience: 1,
-          icon: 'FaGolang',
-          description: 'Microservices, concurrent programming',
-          projects: ['API Gateway']
-        },
-        'R': {
-          level: 60,
-          yearsOfExperience: 1,
-          icon: 'SiR',
-          description: 'Statistical analysis, data visualization',
-          projects: ['Data Analysis Projects']
+        'HTML/CSS': {
+          level: 85,
+          yearsOfExperience: 3,
+          icon: 'FaHtml5',
+          description: 'Modern web development, responsive design',
+          projects: ['Ford Analytics Dashboard', 'Portfolio']
         }
       };
       
@@ -88,35 +81,42 @@ export const skillsData: SkillCategory[] = [
           yearsOfExperience: 3,
           icon: 'SiSpring',
           description: 'Microservices, REST APIs, security, data access',
-          projects: ['Payment Processing System', 'Microservices Migration']
+          projects: ['Enterprise Applications']
         },
-        'Spring Data': {
+        'Node.js': {
           level: 88,
-          yearsOfExperience: 3,
-          icon: 'SiSpring',
-          description: 'JPA, repositories, database integration',
-          projects: ['Payment Processing System']
+          yearsOfExperience: 2,
+          icon: 'FaNodeJs',
+          description: 'Express.js, event-driven architecture, REST APIs',
+          projects: ['PulsePay', 'Backend Services']
+        },
+        'Express': {
+          level: 85,
+          yearsOfExperience: 2,
+          icon: 'SiExpress',
+          description: 'Web framework for Node.js, middleware, routing',
+          projects: ['PulsePay']
+        },
+        'Flask': {
+          level: 88,
+          yearsOfExperience: 2,
+          icon: 'SiFlask',
+          description: 'Python web framework, REST APIs, microservices',
+          projects: ['Ford Analytics Dashboard', 'Data Pipeline Monitoring']
         },
         'Hibernate': {
           level: 85,
           yearsOfExperience: 3,
           icon: 'SiHibernate',
           description: 'ORM mapping, caching, performance optimization',
-          projects: ['Payment Processing System']
+          projects: ['Enterprise Java Applications']
         },
-        'FastAPI': {
-          level: 88,
+        'Streamlit': {
+          level: 85,
           yearsOfExperience: 2,
-          icon: 'SiFastapi',
-          description: 'High-performance Python APIs, async programming',
-          projects: ['System Benchmark Dashboard', 'Data Pipeline']
-        },
-        'Node.js': {
-          level: 80,
-          yearsOfExperience: 2,
-          icon: 'FaNodeJs',
-          description: 'Express.js, event-driven architecture',
-          projects: ['Analytics Dashboard', 'API Gateway']
+          icon: 'SiStreamlit',
+          description: 'Python web apps, data visualization, rapid prototyping',
+          projects: ['LLM Benchmark Dashboard']
         }
       };
       
@@ -147,14 +147,7 @@ export const skillsData: SkillCategory[] = [
           yearsOfExperience: 3,
           icon: 'FaReact',
           description: 'Hooks, Context API, component architecture',
-          projects: ['Analytics Dashboard', 'Portfolio']
-        },
-        'Angular': {
-          level: 78,
-          yearsOfExperience: 2,
-          icon: 'FaAngular',
-          description: 'Component architecture, services, RxJS',
-          projects: ['Enterprise Applications']
+          projects: ['Ford Analytics Dashboard', 'Portfolio']
         },
         'HTML/CSS': {
           level: 92,
@@ -168,7 +161,7 @@ export const skillsData: SkillCategory[] = [
           yearsOfExperience: 2,
           icon: 'SiTypescript',
           description: 'Type-safe JavaScript, React applications',
-          projects: ['Analytics Dashboard', 'Portfolio']
+          projects: ['Ford Analytics Dashboard', 'Portfolio']
         }
       };
       
@@ -199,42 +192,70 @@ export const skillsData: SkillCategory[] = [
           yearsOfExperience: 3,
           icon: 'FaDocker',
           description: 'Containerization, multi-stage builds, orchestration',
-          projects: ['Payment Processing System', 'Data Pipeline']
+          projects: ['PulsePay', 'LLM Benchmark Dashboard']
         },
-        'Kubernetes': {
-          level: 80,
+        'AWS (ECS, ECR, Secrets Manager)': {
+          level: 82,
           yearsOfExperience: 2,
-          icon: 'SiKubernetes',
-          description: 'Container orchestration, deployments, services',
-          projects: ['Microservices Migration', 'API Gateway']
+          icon: 'FaAws',
+          description: 'ECS container orchestration, ECR registry, Secrets management',
+          projects: ['PulsePay']
+        },
+        'Apache Kafka': {
+          level: 78,
+          yearsOfExperience: 2,
+          icon: 'SiApachekafka',
+          description: 'Event streaming, message queues, distributed systems',
+          projects: ['Data Pipeline Monitoring System']
+        },
+        'Kibana': {
+          level: 75,
+          yearsOfExperience: 1,
+          icon: 'SiKibana',
+          description: 'Data visualization, dashboards, monitoring',
+          projects: ['Data Pipeline Monitoring System']
+        },
+        'Git/GitHub': {
+          level: 95,
+          yearsOfExperience: 4,
+          icon: 'FaGithub',
+          description: 'Version control, GitHub Actions, collaboration',
+          projects: ['All Projects']
         },
         'Jenkins': {
           level: 70,
           yearsOfExperience: 2,
           icon: 'SiJenkins',
           description: 'CI/CD pipelines, automated testing',
-          projects: ['Microservices Migration', 'Payment Processing System']
+          projects: ['Enterprise Projects']
         },
-        'Git': {
-          level: 95,
-          yearsOfExperience: 4,
-          icon: 'FaGit',
-          description: 'Version control, branching strategies, collaboration',
-          projects: ['All Projects']
+        'CI/CD': {
+          level: 80,
+          yearsOfExperience: 2,
+          icon: 'FaRocket',
+          description: 'GitHub Actions, automated deployments, pipeline automation',
+          projects: ['PulsePay']
         },
-        'AWS': {
-          level: 82,
+        'Postman': {
+          level: 85,
           yearsOfExperience: 3,
-          icon: 'FaAws',
-          description: 'EC2, S3, RDS, Lambda, CloudFormation',
-          projects: ['Payment Processing System', 'Data Pipeline']
+          icon: 'SiPostman',
+          description: 'API testing, documentation, collaboration',
+          projects: ['All API Projects']
         },
-        'Kafka': {
+        'Selenium': {
           level: 78,
           yearsOfExperience: 2,
-          icon: 'SiApachekafka',
-          description: 'Event streaming, message queues, distributed systems',
-          projects: ['Payment Processing System', 'Data Pipeline']
+          icon: 'SiSelenium',
+          description: 'Automated testing, test coverage improvement',
+          projects: ['LLM Benchmark Dashboard']
+        },
+        'Stripe API': {
+          level: 80,
+          yearsOfExperience: 1,
+          icon: 'SiStripe',
+          description: 'Payment processing, webhooks, secure transactions',
+          projects: ['PulsePay']
         }
       };
       
@@ -265,21 +286,28 @@ export const skillsData: SkillCategory[] = [
           yearsOfExperience: 4,
           icon: 'SiPostgresql',
           description: 'Advanced queries, indexing, performance tuning',
-          projects: ['Payment Processing System', 'Data Pipeline']
+          projects: ['Data Pipeline Monitoring System', 'PulsePay']
         },
-        'MySQL': {
-          level: 85,
-          yearsOfExperience: 3,
-          icon: 'SiMysql',
-          description: 'Database design, optimization, replication',
-          projects: ['Payment Processing System', 'Analytics Dashboard']
+        'Firebase': {
+          level: 78,
+          yearsOfExperience: 2,
+          icon: 'SiFirebase',
+          description: 'Realtime database, authentication, cloud functions',
+          projects: ['Web Applications']
+        },
+        'Elasticsearch': {
+          level: 80,
+          yearsOfExperience: 2,
+          icon: 'SiElasticsearch',
+          description: 'Search engine, analytics, real-time data',
+          projects: ['Data Pipeline Monitoring System']
         },
         'MongoDB': {
           level: 78,
           yearsOfExperience: 2,
           icon: 'SiMongodb',
           description: 'Document-based storage, aggregation pipelines',
-          projects: ['Analytics Dashboard', 'API Gateway']
+          projects: ['Web Applications']
         }
       };
       
