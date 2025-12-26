@@ -31,16 +31,16 @@ const getProjectDetails = (projectId: string) => {
       ]
     },
     'pulsepay': {
-      longDescription: 'Architected a scalable payment processing application using Node.js, Express, and Stripe API, processing 500-1,000 test transactions with secure webhooks and containerized microservices on AWS ECS.',
+      longDescription: 'Engineered a fault-tolerant payment service using the Stripe API, handling secure webhooks and ensuring transaction reliability. Orchestrated containerized microservices on AWS ECS, implementing high-availability patterns to ensure 99% uptime. Designed a CI/CD pipeline (GitHub Actions) to automate safe deployments, reducing lead time by 60%.',
       challenges: [
-        'Orchestrating containerized microservices with Application Load Balancer',
-        'Ensuring high availability and 99% uptime through rolling updates',
-        'Implementing secure payment processing with Stripe webhooks'
+        'Building fault-tolerant payment processing with Stripe webhook reliability',
+        'Implementing high-availability patterns for 99% uptime on AWS ECS',
+        'Designing safe deployment strategies for payment infrastructure'
       ],
       learnings: [
-        'CI/CD pipeline automation with GitHub Actions',
-        'Docker containerization and AWS ECS deployment',
-        'Stripe API integration for payment processing'
+        'Stripe API best practices for payment reliability and security',
+        'AWS ECS orchestration for high-availability microservices',
+        'CI/CD strategies for zero-downtime deployments in payment systems'
       ]
     }
   };

@@ -2,8 +2,10 @@
 export const portfolioData = {
   personal: {
     name: 'Y Shabanya Kishore',
-    title: 'Software Engineer Intern',
-    roles: ['Software Engineer', 'Full-Stack Developer', 'Data Science Student'],
+    title: 'Software Engineer | Backend & Infrastructure | 2026 Grad',
+    roles: ['Backend Engineer', 'Infrastructure Developer', 'Systems Engineer'],
+    tagline: 'Building scalable systems and reliable infrastructure. Passionate about payments and developer tooling.',
+    about: 'I enjoy dissecting complex backend challenges, from designing fair matchmaking algorithms to ensuring low-latency server infrastructure. My focus is on building robust systems that scale efficiently while maintaining reliability and performance.',
     email: 'yadaginishabanya@gmail.com',
     phone: '+91-8296281999',
     location: 'Chennai, Tamil Nadu',
@@ -18,7 +20,7 @@ export const portfolioData = {
     url: 'https://portfolio-shabanya.vercel.app',
     title: 'Y Shabanya Kishore Portfolio',
     description:
-      'Personal portfolio showcasing software engineering projects with expertise in full-stack development, data science, and enterprise applications',
+      'Software Engineer specializing in backend systems and infrastructure. Building scalable payment solutions and developer tooling. 2026 Graduate.',
     image: '/logo512.png',
   },
 
@@ -29,11 +31,11 @@ export const portfolioData = {
       company: 'Ford Motor Company',
       period: 'August 2025 - Present',
       description: [
-        'Developed an analytics dashboard with React/TypeScript and Python Flask to track analyst workload, resulting in 100 users',
-        'Implemented a weighted scoring algorithm, reducing workload analysis time by 80-90% through data-driven resource allocation',
-        'Designed interactive data visualizations using Chart.js to display trends, enabling identification of bottlenecks across 27+ root cause categories',
-        'Designed a data integration system that reduced reporting time by 60% by consolidating analyst performance data from August to November',
-        'Collaborated with supply chain analysts to define severity weightings for 50+ root cause categories, incorporating stakeholder feedback',
+        'Collaborated directly with supply chain stakeholders to build an internal analytics dashboard, scaling to 100+ daily active users',
+        'Owned the end-to-end development of data integration modules, improving reporting efficiency by 60%',
+        'Engineered a weighted scoring algorithm that reduced workload analysis time by 80-90%, enabling data-driven resource allocation',
+        'Built real-time data visualizations to identify system bottlenecks across 27+ categories, directly impacting operational decisions',
+        'Partnered with cross-functional teams to gather requirements and iterate on features based on user feedback',
       ],
       technologies: [
         'React',
@@ -55,6 +57,28 @@ export const portfolioData = {
 
   projects: [
     {
+      id: 'pulsepay',
+      title: 'PulsePay: Scalable Payment Infrastructure',
+      description:
+        'Engineered a fault-tolerant payment service using the Stripe API, handling secure webhooks and ensuring transaction reliability',
+      technologies: ['Node.js', 'Stripe API', 'AWS ECS', 'Docker'],
+      category: ['Backend', 'Infrastructure'],
+      metrics: ['99% uptime', '60% deployment time reduction', 'Zero security incidents'],
+      github: 'https://github.com/ishabanya/pulsepay',
+      featured: true,
+    },
+    {
+      id: 'data-pipeline-monitoring',
+      title: 'Data Pipeline Monitoring System',
+      description:
+        'Built high-performance data ingestion system with real-time observability. Optimized database queries reducing latency by 15%',
+      technologies: ['Python', 'Apache Kafka', 'PostgreSQL', 'Kibana', 'SQL'],
+      category: ['Backend', 'Infrastructure'],
+      metrics: ['15% latency reduction', '50% query optimization', 'Real-time monitoring'],
+      github: 'https://github.com/ishabanya/data-pipeline-monitoring',
+      featured: true,
+    },
+    {
       id: 'llm-benchmark',
       title: 'LLM Benchmark Dashboard',
       description:
@@ -63,37 +87,16 @@ export const portfolioData = {
       category: ['Python', 'Data Analysis'],
       metrics: ['75+ test cases', 'Sub-2s API response time', '90% test coverage'],
       github: 'https://github.com/ishabanya/llm-benchmark',
-      featured: true,
-    },
-    {
-      id: 'data-pipeline-monitoring',
-      title: 'Data Pipeline Monitoring System',
-      description:
-        'Established comprehensive monitoring tools and interactive Kibana dashboards for data pipeline optimization',
-      technologies: ['Python', 'Apache Kafka', 'PostgreSQL', 'Kibana', 'SQL'],
-      category: ['Data Engineering', 'Backend'],
-      metrics: ['50% query performance improvement', '15% error reduction', '15% CPU usage reduction'],
-      github: 'https://github.com/ishabanya/data-pipeline-monitoring',
-      featured: true,
-    },
-    {
-      id: 'pulsepay',
-      title: 'PulsePay - Payment Processing Platform',
-      description:
-        'Architected a scalable payment processing application using Node.js and Stripe API, processing 500-1,000 test transactions',
-      technologies: ['Node.js', 'Express', 'Stripe API', 'AWS ECS', 'Docker', 'GitHub Actions'],
-      category: ['Backend', 'Full-Stack'],
-      metrics: ['500-1,000 test transactions', '99% uptime', '60% deployment time reduction'],
-      github: 'https://github.com/ishabanya/pulsepay',
-      featured: true,
+      featured: false,
     },
   ],
 
   skills: {
-    languages: ['Java', 'Python', 'JavaScript', 'TypeScript', 'SQL', 'C/C++', 'HTML/CSS'],
-    backend: ['Spring Boot', 'Node.js', 'Express', 'Flask', 'Streamlit', 'Hibernate'],
-    frontend: ['React', 'HTML/CSS', 'TypeScript'],
-    databases: ['PostgreSQL', 'Firebase', 'Elasticsearch', 'MongoDB'],
-    tools: ['Docker', 'AWS (ECS, ECR, Secrets Manager)', 'Apache Kafka', 'Kibana', 'Git/GitHub', 'Jenkins', 'CI/CD', 'Postman', 'Selenium', 'Stripe API'],
+    primary: ['Java', 'JavaScript', 'TypeScript', 'Node.js', 'SQL'],
+    backend: ['Spring Boot', 'Express', 'REST APIs', 'Microservices', 'Stripe API'],
+    infrastructure: ['AWS (ECS)', 'Docker', 'Kafka', 'CI/CD', 'GitHub Actions'],
+    databases: ['PostgreSQL', 'MongoDB', 'Redis', 'Elasticsearch'],
+    languages: ['Python', 'C/C++', 'Go'],
+    tools: ['Git', 'Kubernetes', 'Jenkins', 'Kibana', 'Postman'],
   },
 };
