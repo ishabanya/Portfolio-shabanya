@@ -1,6 +1,11 @@
 {
   "version": 2,
   "name": "portfolio-shabanya",
+  "git": {
+    "deploymentEnabled": {
+      "master": true
+    }
+  },
   "buildCommand": "npm run build",
   "outputDirectory": "build",
   "rewrites": [
