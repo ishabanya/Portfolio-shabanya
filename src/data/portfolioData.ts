@@ -2,7 +2,7 @@
 export const portfolioData = {
   personal: {
     name: 'Y Shabanya Kishore',
-    title: 'Software Engineer',
+    title: 'Software Engineer Intern',
     roles: ['Software Engineer', 'Full-Stack Developer', 'Data Science Student'],
     email: 'yadaginishabanya@gmail.com',
     phone: '+91-8296281999',
