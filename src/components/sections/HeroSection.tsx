@@ -108,6 +108,9 @@ const HeroSection = memo(() => {
           >
             Y Shabanya Kishore
           </motion.h1>
+          
+          {/* Version indicator - REMOVE AFTER CONFIRMING DEPLOYMENT */}
+          <p className="text-xs text-gray-400 mb-2">Deploy v1.2 - Fixed experience years</p>
 
           {/* Typewriter Role */}
           <motion.div 
