@@ -15,7 +15,7 @@ export const portfolioData = {
   },
 
   site: {
-    url: 'https://portfolio-shabanya.vercel.app', // Will be updated when deployed
+    url: 'https://portfolio-shabanya.vercel.app',
     title: 'Y Shabanya Kishore Portfolio',
     description:
       'Personal portfolio showcasing software engineering projects with expertise in full-stack development, data science, and enterprise applications',
